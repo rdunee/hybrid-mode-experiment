@@ -8,3 +8,10 @@ for ns in hme-edge hme-gateway; do
     ip netns del "$ns"
   fi
 done
+
+# Remove experimental veth pairs left in the host namespace.
+for dev in hme-e1 hme-g1 hme-e2 hme-g2; do
+  if ip link show dev "$dev" >/dev/null 2>&1; then
+    ip link delete dev "$dev"
+  fi
+done
