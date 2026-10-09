@@ -1,0 +1,488 @@
+seed: 20271001
+repetitions: 10
+loss_pct:
+- 0
+- 0.5
+- 1
+- 2
+- 3
+- 5
+modes:
+- single
+- striping
+- replication
+- fec
+paths:
+- rtt_ms: 30
+  mbps: 100
+  loss_pct: 0
+  queue_packets: 1000
+- rtt_ms: 50
+  mbps: 100
+  loss_pct: 0
+  queue_packets: 1000
+stabilization_s: 20
+warmup_s: 10
+measurement_s: 120
+drain_s: 3
+cooldown_s: 10
+interval_ms: 20
+payload_bytes: 200
+flows: 1
+single_path: 0
+fec_k: 5
+max_p99_schedule_lag_ms: 2
+max_host_cpu_pct: 85
+max_process_core_fraction: 0.8
+max_probe_loss: 0.25
+states:
+- name: L0-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.25-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.25
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.25-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.25
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.25-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.25
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.25-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.25
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.25-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.25
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.5-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.5
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.5-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.5
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.5-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.5
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.5-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.5
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.5-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.5
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.75-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.75
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.75-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.75
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.75-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.75
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.75-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.75
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L0.75-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0.75
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1.5-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1.5
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1.5-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1.5
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1.5-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1.5
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1.5-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1.5
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1.5-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1.5
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L3-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 3
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L3-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 3
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L3-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 3
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L3-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 3
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L3-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 3
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-D0
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-D20
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-D50
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+  - rtt_ms: 80
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-D100
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+  - rtt_ms: 130
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-D200
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+  - rtt_ms: 230
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000

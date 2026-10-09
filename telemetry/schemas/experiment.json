@@ -1,0 +1,17 @@
+{
+  "id": "string",
+  "block": "integer",
+  "rep": "integer",
+  "mode": "enum",
+  "state": "string",
+  "paths": "array",
+  "seed": "integer",
+  "config": "object",
+  "valid": "boolean",
+  "failures": "array",
+  "kernel": "string",
+  "python": "string",
+  "source_sha256": "object",
+  "start_utc": "UTC string",
+  "end_utc": "UTC string"
+}

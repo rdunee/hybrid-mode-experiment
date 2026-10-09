@@ -1,0 +1,8 @@
+{
+  "seq": "uint32",
+  "flow": "uint32",
+  "tx_ns": "int64 CLOCK_MONOTONIC same host",
+  "phase": "warmup|measure",
+  "payload_bytes": "int",
+  "schedule_lag_ms": "float"
+}

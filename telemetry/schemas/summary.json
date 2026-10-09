@@ -1,0 +1,9 @@
+{
+  "state": "string",
+  "mode": "string",
+  "metric": "string",
+  "n": "integer independent runs",
+  "mean": "float",
+  "ci_low": "float",
+  "ci_high": "float"
+}

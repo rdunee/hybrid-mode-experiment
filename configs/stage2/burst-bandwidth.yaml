@@ -1,0 +1,186 @@
+seed: 20271001
+repetitions: 10
+loss_pct:
+- 0
+- 0.5
+- 1
+- 2
+- 3
+- 5
+modes:
+- single
+- striping
+- replication
+- fec
+paths:
+- rtt_ms: 30
+  mbps: 100
+  loss_pct: 0
+  queue_packets: 1000
+- rtt_ms: 50
+  mbps: 100
+  loss_pct: 0
+  queue_packets: 1000
+stabilization_s: 20
+warmup_s: 10
+measurement_s: 120
+drain_s: 3
+cooldown_s: 10
+interval_ms: 20
+payload_bytes: 200
+flows: 1
+single_path: 0
+fec_k: 5
+max_p99_schedule_lag_ms: 2
+max_host_cpu_pct: 85
+max_process_core_fraction: 0.8
+max_probe_loss: 0.25
+states:
+- name: L1-B2
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+    burst:
+      mean_length: 2
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-B7
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+    burst:
+      mean_length: 7
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L1-B15
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 1
+    queue_packets: 1000
+    burst:
+      mean_length: 15
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-B2
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+    burst:
+      mean_length: 2
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-B7
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+    burst:
+      mean_length: 7
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L2-B15
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 2
+    queue_packets: 1000
+    burst:
+      mean_length: 15
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-B2
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+    burst:
+      mean_length: 2
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-B7
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+    burst:
+      mean_length: 7
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: L5-B15
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 5
+    queue_packets: 1000
+    burst:
+      mean_length: 15
+  - rtt_ms: 50
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+- name: BW1
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 100.0
+    loss_pct: 0
+    queue_packets: 1000
+- name: BW2
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 50.0
+    loss_pct: 0
+    queue_packets: 1000
+- name: BW5
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 20.0
+    loss_pct: 0
+    queue_packets: 1000
+- name: BW10
+  paths:
+  - rtt_ms: 30
+    mbps: 100
+    loss_pct: 0
+    queue_packets: 1000
+  - rtt_ms: 50
+    mbps: 10.0
+    loss_pct: 0
+    queue_packets: 1000

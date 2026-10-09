@@ -1,0 +1,7 @@
+{
+  "seq": "uint32 block base for parity",
+  "path": "0|1",
+  "symbol": "uint8",
+  "tx_ns": "int64",
+  "bytes": "int IPv4+UDP+experiment header+body, excludes Ethernet"
+}

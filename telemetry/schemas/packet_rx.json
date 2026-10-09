@@ -1,0 +1,13 @@
+{
+  "seq": "uint32",
+  "flow": "uint32",
+  "tx_ns": "int64",
+  "rx_ns": "int64",
+  "path": "0|1",
+  "symbol": "uint8",
+  "duplicate": "0|1",
+  "reordered": "0|1",
+  "fec_recovered": "0|1",
+  "decode_ns": "int64",
+  "payload_bytes": "int"
+}

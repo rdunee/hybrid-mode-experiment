@@ -1,0 +1,7 @@
+{
+  "timestamp_ns": "int64",
+  "seq": "int",
+  "path": "0|1",
+  "rtt_ms": "float nullable",
+  "lost": "0|1"
+}
